@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<html>
+
+
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+   <title>Common Page</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{% static 'css/articles.css' %}">
+</head>
+
+<body background="">
+<div class="page-head">
+    <center><a href="{%url 'articles_list'%}"><h1>Common Page</h1></a></center>
+    <center><h4>share stories you love!!</h4></center>
+</div>
+{% if user.is_authenticated %}
+<div class="info">
+
+    <h6>hello {{user.username}} !!!</h6>
+
+    <h6><a href="{% url 'logout' %}">logout</a></h6>
+    <a href="{% url 'add_post' %}"><button type="button">Add Post</button> </a>
+
+{%else%}
+
+<h6>hello !!!</h6>
+<div class="tabs">
+    <ul>
+        <li>
+            <p><a href="{% url 'login' %}">login</a></p>
+        </li>
+    </ul>
+</div>
+{% endif %}
+{% block content %}
+{% endblock %}
+</body>
+</html>

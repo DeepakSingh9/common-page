@@ -1,0 +1,23 @@
+
+{% extends 'articles/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+{% block content %}
+<div class="login-page">
+    <div class="form">
+<div class="login" align="center">
+<form method="POST" action="">
+    {% csrf_token %}
+    username:<input type="text" name="username" placeholder="username">
+</br>
+    password:<input type="password" name="password" placeholder="askhim">
+
+    <button>login</button>
+</form>
+</div>
+    </div>
+</div>
+{% endblock %}

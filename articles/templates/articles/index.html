@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'articles/base.html'%}
+{% block title %}Common Page{% endblock %}
+
+{% block content %}
+
+{% for post in posts %}
+<div class="list" align="center">
+{{post.describe}}
+    <h1><a href="{{post.link}}">{{post.title}}</a></h1>
+    <div class="details">shared by:{{post.name}} <span></span>| {{post.publish}}
+    </div>
+<iframe src="{{post.link}}" width="1000px" height="300px"><a href="{{post.link}}"></a></iframe>
+    </div>
+{% endfor %}
+
+{% endblock %}
