@@ -1,10 +1,16 @@
-h1 a {
-    color: #2339fc;
+.body{
+background:bg.jpg;
+}
+
+
+h1 a ,h1 a:active, h1 a:visited{
+    color: black;
 }
 .page-head {
     background-color: #000000;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    height:170px;
 }
 
 .page-head h1,.page-head h6,.page-head h4{
@@ -53,8 +59,8 @@ h1, h2, h3, h4 ,h6{
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
-    color: #000000;
+.post h1 a, .post h1 a:visited ,.post h1 a: active{
+    color:black;
 }
 
 .job-title h3{
@@ -70,6 +76,7 @@ h1, h2, h3, h4 ,h6{
     padding: 25px;
     margin: 25px;
     float:left;
+    margin-top: 25px;
 
 
 }
@@ -108,12 +115,15 @@ h1, h2, h3, h4 ,h6{
 
 .list{
 box-shadow: 10px 10px 5px #888888;
-margin: auto;
 width: 80%;
-border: none
-padding: 50px
-margin-top:300px;
+margin:auto;
+border: none;
+padding: 50px;
+margin-top:100px;
 margin-bottom:80px;
+background:#f0f3f4;
+color:black;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 
 }
 
@@ -216,13 +226,14 @@ color:black;
 
 .details{
 background-color:black;
-width:30%;
- clear: both;
- display: inline-block;
- overflow: hidden;
- white-space: nowrap;
- color:yellow;
- border-radius:25px
+width:40%;
+clear: both;
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;
+color:yellow;
+border-radius:25px;
+float-left;
 
 }
 
@@ -233,5 +244,55 @@ width:30%;
  white-space: nowrap;
 color:white;
 font-family:veranda;
+
 }
 
+.button{
+background-color: green; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+float:right;
+
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+position:fixed;
+top:200px;
+
+}
+
+.descr{
+font-family: "Arial Black";
+font-weight:bold;
+font-size:18px;
+padding-top:30px;
+}
+
+.logout{
+background-color: green; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+float:right;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+position:fixed;
+top:280px;
+
+}
+
+.date{
+float:right;
+padding:20px;
+}
+
+.info{
+
+}
